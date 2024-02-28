@@ -1,0 +1,30 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+ name: cluster-ip
+ labels:
+  app: nginx
+  demo: service
+
+spec:
+ containers:
+ - name: cluster-ip
+   image: nginx
+   ports:
+   - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata: 
+ name: cluster-service
+
+spec:
+ selector:
+  app: nginx
+  demo: service
+ ports:
+ - protocol: TCP
+   port: 80
+   targetPort: 9376
