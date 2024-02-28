@@ -27,7 +27,7 @@ metadata:
   name: config-pod-1
 spec:
   # list of containers
-  containers:
+ containers:
   - name: config-pod-1
     image: nginx
     #here with this line port will not be opened, just for information
