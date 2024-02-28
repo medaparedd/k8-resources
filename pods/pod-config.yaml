@@ -16,7 +16,7 @@ spec:
        name: configmap
        key: name
    - name : occupation
-      valueFrom:
+     valueFrom:
        ConfigMapKeyRef:
         name: configmap
         key: occupation
