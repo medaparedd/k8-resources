@@ -4,7 +4,7 @@ metadata:
  name: label
  labels:
    name: sudha
-   age: 24
+   age: "24"
 
 spec: 
  containers:
