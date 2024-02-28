@@ -12,11 +12,11 @@ spec:
    env:
    - name: env
      valueFrom:
-      ConfigMapKeyRef:
+      configMapKeyRef:
        name: configmap
        key: name
    - name : ent
      valueFrom:
-       ConfigMapKeyRef:
+       configMapKeyRef:
         name: configmap
         key: occupation
