@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: pod-config
+
+spec:
+ containers:
+ - name: con-4
+   image: nginx
+   ports:
+   - containerPort: 80
+   env:
+   - name: env
+     valueFrom:
+      ConfigMapKeyRef:
+       name: configmap
+       key: name
+
+    - name : occupation
+      valueFrom:
+       ConfigMapKeyRef:
+        name: configmap
+        key: occupation
