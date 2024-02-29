@@ -20,6 +20,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx
+        image: nginx:mainline-alpine3.18-perl
         ports:
         - containerPort: 80
