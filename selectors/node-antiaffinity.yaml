@@ -13,4 +13,7 @@ spec:
         operator: NotIn 
         value: roboshop
      
-   
+ containers:
+ - name: pod
+   image: nginx
+   port: 80
