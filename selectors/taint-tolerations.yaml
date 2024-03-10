@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: taint-pod
+ 
+
+spec:
+ containers:
+ - name: taint-pod
+   image: nginx
+   ports:
+   - containerPort: 80
