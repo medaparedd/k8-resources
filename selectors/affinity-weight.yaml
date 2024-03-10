@@ -12,7 +12,7 @@ spec:
           - key: project
             operator: In
             values:
-            - amazon
+            - amazon2
       - weight: 50
         preference:
           matchExpressions:
