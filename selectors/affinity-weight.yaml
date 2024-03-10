@@ -12,14 +12,14 @@ spec:
           - key: project
             operator: In
             values:
-            - amazon2
+            - amazon
       - weight: 50
         preference:
           matchExpressions:
           - key: project
             operator: In
             values:
-            - roboshop2
+            - roboshop
   containers:
   - name: with-node-affinity
     image: registry.k8s.io/pause:2.0
