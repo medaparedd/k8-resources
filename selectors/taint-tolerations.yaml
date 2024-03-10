@@ -10,3 +10,7 @@ spec:
    image: nginx
    ports:
    - containerPort: 80
+ tolerations:
+ - key: project
+   operator: "Exists"
+   effect: NoSchedule
